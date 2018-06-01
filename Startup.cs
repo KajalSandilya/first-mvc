@@ -42,7 +42,7 @@ namespace MovieProject
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Kaju}/{action=Index}/{id?}");
+                    template: "{controller=myweb}/{action=kfirst}/{id?}");
             });
         }
     }

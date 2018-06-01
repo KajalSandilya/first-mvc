@@ -1,0 +1,171 @@
+html{
+    background-color:#FFF;
+    background-image: url(../Kimage/D2.jpg);
+    background-repeat:repeat-x;
+    }
+    
+    h1
+    {
+    animation-name:bounce;
+    animation-duration:2s;
+    margin-top:100px;
+    margin-bottom:30px;
+    color:green;
+    text-align:center;
+    }
+    h2
+    {
+    color:red;
+    }
+    .toggle-btn{
+    display:none;
+    }
+    .toggle-btn-visible{
+    display:block;
+    }
+    .toggle-target-hidden{
+    display:none;
+    }
+    .toggle-target-expanded{
+    display:block;
+    }
+    .buttons{
+    margin-top:40px;
+    }
+    .buttons a{
+    color:#617140;
+    text-decoration:none;
+    padding:10px 20px;
+    border:3px solid #e5e9dc;
+    border-radius:10px;
+    }
+    .buttons a:hover{
+    background-color:#e5e9dc;
+    }
+    
+    footer p {
+    color:red;
+    text-align:center;
+    font-weight:300%;
+    
+    padding:20px;
+    }
+    .def{
+    color:black;
+    padding:10px;
+    font-weight:200%;
+    background-color:lightgrey
+    }
+    .image{
+    position:relative;
+    margin-bottom:40px;
+    overflow:hidden;
+    }
+    .image img{
+    display:block;
+    transition:all 1s;
+    }
+    .image:hover img{
+    transform:scale(0.5);
+    }
+    .img-desc{
+    position:absolute;
+    bottom:0;
+    left:0;
+    color:white;
+    background-color:rgba(100,0,0,.65);
+    opacity:0;
+    transition-property:all;
+    transition-duration:1s;
+    transform:translateY(100%);
+    }
+    .image:hover .img-desc{
+    opacity:1;
+    transform:translateY(0);
+    }
+    .abc{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    }
+    table{
+    border-spacing:0;
+    border-collapse:collapse;
+    width:40%;
+    }
+    table td{
+    text-align:left;
+    }
+    
+    table th{
+    text-align:left;
+    background-color:#869960;
+    color:black;
+    text-shadow:1px 1px 0 rgba(0,0,0,.4);
+    }
+    table th,
+    table td{
+    border:1px solid green;
+    }
+    table tbody tr:nth-child(odd)td{
+    background-color:grey;
+    }
+    form{
+    background-color:grey;
+    background-image:url(../Kimage/cute.png);
+    padding:30px 30px;
+    width:45%;
+    }
+    input[type="text"],
+    input[type="email"],
+    select{
+    width:60%;
+    display:block;
+    box-sizing:border-box;
+    padding:0 10px;
+    height:35px;
+    margin-bottom:5px;
+    border:2px solid black;
+    font-size:100%;
+    }
+    .hidden{
+    position:absolute;
+    height:0;
+    width:0;
+    overflow:hidden;
+    visibility:hidden;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus{
+     border:1px solid #869960;
+     box-shadow:inset 2px 2px 2px rgba(0,0,0,.14);
+    }
+    input[type="submit"]{
+    width:100%;
+    height:40px;
+    display:block;
+    box-sizing:border-box;
+    background-color:red;
+    color:#FFF;
+    }
+    @keyframes bounce{
+    0%
+     {
+     opacity:0;
+     transform:translateY(-100%);
+     }
+    44%
+     {
+     opacity:1;
+     transform:translateY(0%);
+     }
+    66%
+     {
+     transform:translateY(-6px);
+     }
+    100%
+     {
+     opacity:1;
+     transform:translateY(0%);
+     }
+    }
