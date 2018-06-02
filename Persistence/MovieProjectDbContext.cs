@@ -12,5 +12,6 @@ namespace MovieProject.Persistence
        }
 
        public DbSet<Student> Students { get; set; }
+       public DbSet<TMCourse> TMCourses { get; set; }
     }
 }
