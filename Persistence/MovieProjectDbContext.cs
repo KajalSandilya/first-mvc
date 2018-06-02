@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MovieProject.Models;
 
 namespace MovieProject.Persistence
 {
@@ -9,5 +10,7 @@ namespace MovieProject.Persistence
        {
            
        }
+
+       public DbSet<Student> Students { get; set; }
     }
 }
