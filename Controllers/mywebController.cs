@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Mvc;
+
 namespace MovieProject.Controllers
 {
-    public class mywebController:Controller
+    public class mywebController : Controller
     {
          public IActionResult kfirst()
         {
@@ -10,7 +12,7 @@ namespace MovieProject.Controllers
 
          public IActionResult home()
         {
-            return view();
+            return View();
         }
         public IActionResult account()
         {
@@ -20,11 +22,11 @@ namespace MovieProject.Controllers
 
          public IActionResult Result()
         {
-            return view();
+            return View();
         }
         public IActionResult quality()
         {
-            return view();
+            return View();
         }
 
 
